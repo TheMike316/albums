@@ -1,6 +1,6 @@
 /* global fetch:false */
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import AlbumDetail from './AlbumDetail';
 //import axios from 'axios'; issues with axios
 
@@ -23,9 +23,9 @@ class AlbumList extends Component {
     console.log(this.state);
 
     return (
-      <View>
+      <ScrollView>
         {this.renderAlbums()}
-      </View>
+      </ScrollView>
       );
     }
 }
